@@ -1,0 +1,40 @@
+Enter a stringEnter a stringEnter a stringThis is some output from the lab  0
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  1
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  2
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  3
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  4
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  5
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  6
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  7
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  8
+Your input was Seed
+Your input was Flop
+Your input was Noice
+This is some output from the lab  9
+Your input was Seed
+Your input was Flop
+Your input was Noice
