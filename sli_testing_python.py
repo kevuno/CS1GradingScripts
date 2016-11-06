@@ -14,7 +14,7 @@ args = sys.argv
 """
 Modify the input test accordingly
 """
-input_tests = ["1","2","7"]
+input_tests = ["1","2"]
 
 input_files = True
 
@@ -73,7 +73,23 @@ for i in input_tests:
 	for line in open("out"+i+".txt"):
 		#if there is no more to read in the actual output but the program's run output is still going we just print multiple "_"
 		if(line_index < len(actual_output)):
-			print('{:50}{}{:50}'.format(actual_output[line_index],"|| ",line))
+			if( len(actual_output[line_index]) > difference_column_index and len(line) > difference_column_index ):
+
+				print('{:50}{}{:50}'.format(actual_output[line_index][:50],"|| ",line[:50]))
+				print('{:50}{}{:50}'.format(actual_output[line_index][50:],"|| ",line[50:]))
+
+			elif( len(actual_output[line_index]) > difference_column_index and len(line) <= difference_column_index ):
+				
+				print('{:50}{}{:50}'.format(actual_output[line_index][:50],"|| ",line))
+				print('{:50}{}{:_<50}'.format(actual_output[line_index][50:],"|| ",""))
+
+			elif( len(actual_output[line_index]) <= difference_column_index and len(line) > difference_column_index ):
+				
+				print('{:50}{}{:50}'.format(actual_output[line_index],"|| ",line[:50]))
+				print('{:_<50}{}{:50}'.format("","|| ",line[50:]))	
+
+			else:	
+				print('{:50}{}{:50}'.format(actual_output[line_index],"|| ",line))
 		else:
 			print('{:_<50}'.format(''))
 			
